@@ -1,0 +1,51 @@
+aliases:
+    fleeks: cd ~/.local/share/fleek
+    latest-fleek-version: nix run https://getfleek.dev/latest.tar.gz -- version
+    update-fleek: nix run https://getfleek.dev/latest.tar.gz -- update
+allow_broken: false
+auto_gc: true
+bling: default
+blocklist: []
+byo_git: false
+ejected: false
+flakedir: .local/share/fleek
+git:
+    autocommit: true
+    autopull: true
+    autopush: true
+    enabled: true
+min_version: 0.8.4
+name: Fleek Configuration
+overlays: {}
+packages:
+    - helix
+    - go
+    - gcc
+    - nodejs
+    - yarn
+    - rustup
+    - vhs
+    - rnix-lsp
+    - duf
+paths:
+    - $HOME/bin
+    - $HOME/.local/bin
+    
+programs:
+    - dircolors
+shell: zsh
+systems:
+    - arch: aarch64
+      home: ""
+      hostname: MacBook-Pro-3.local
+      os: darwin
+      user:
+        email: martin.m@aliyun.com
+        name: mac
+        ssh_private_key_file: ~/.ssh/id_rsa
+        ssh_public_key_file: ~/.ssh/id_rsa.pub
+        username: mac
+      username: mac
+track: nixos-unstable
+unfree: true
+users: []
