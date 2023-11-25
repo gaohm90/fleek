@@ -21,6 +21,14 @@
   home.packages = [
     # user selected packages
     pkgs.helix
+    pkgs.go
+    pkgs.gcc
+    pkgs.nodejs
+    pkgs.yarn
+    pkgs.rustup
+    pkgs.vhs
+    pkgs.rnix-lsp
+    pkgs.duf
     # Fleek Bling
     pkgs.git
     pkgs.htop
